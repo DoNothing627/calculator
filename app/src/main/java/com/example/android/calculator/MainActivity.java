@@ -168,6 +168,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.button24).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                text= text.substring(0, text.length()-1);
+                textView.setText(String.valueOf(text));
+            }
+        });
+
+        findViewById(R.id.button23).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                text= "";
+                textView.setText(String.valueOf(text));
+            }
+        });
+
+
         findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
             char dau;
             @Override
